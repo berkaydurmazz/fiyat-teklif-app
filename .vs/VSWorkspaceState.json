@@ -1,0 +1,18 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\webapi",
+    "\\webapi\\Base",
+    "\\webapi\\Base\\Base",
+    "\\webapi\\Base\\Base\\Grid",
+    "\\webapi\\obj",
+    "\\webapi\\Properties",
+    "\\webapi\\ViewModel",
+    "\\webapi\\ViewModel\\Customer",
+    "\\webapi\\ViewModel\\General",
+    "\\webapi\\ViewModel\\General\\Grid",
+    "\\webapi\\ViewModel\\Musteri"
+  ],
+  "SelectedNode": "\\ReactCore.sln",
+  "PreviewInSolutionExplorer": false
+}
