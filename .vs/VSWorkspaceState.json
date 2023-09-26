@@ -1,18 +1,18 @@
 {
   "ExpandedNodes": [
     "",
+    "\\reactapp",
+    "\\reactapp\\src",
+    "\\reactapp\\src\\hooks",
+    "\\reactapp\\src\\layout",
+    "\\reactapp\\src\\menu-items",
+    "\\reactapp\\src\\views",
+    "\\reactapp\\src\\views\\digerIslemler",
+    "\\reactapp\\src\\views\\pages\\authentication",
     "\\webapi",
-    "\\webapi\\Base",
-    "\\webapi\\Base\\Base",
-    "\\webapi\\Base\\Base\\Grid",
-    "\\webapi\\obj",
-    "\\webapi\\Properties",
     "\\webapi\\ViewModel",
-    "\\webapi\\ViewModel\\Customer",
-    "\\webapi\\ViewModel\\General",
-    "\\webapi\\ViewModel\\General\\Grid",
-    "\\webapi\\ViewModel\\Musteri"
+    "\\webapi\\ViewModel\\Product"
   ],
-  "SelectedNode": "\\ReactCore.sln",
+  "SelectedNode": "\\reactapp\\public",
   "PreviewInSolutionExplorer": false
 }
