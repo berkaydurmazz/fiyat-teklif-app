@@ -3,16 +3,16 @@
     "",
     "\\reactapp",
     "\\reactapp\\src",
-    "\\reactapp\\src\\hooks",
-    "\\reactapp\\src\\layout",
-    "\\reactapp\\src\\menu-items",
     "\\reactapp\\src\\views",
     "\\reactapp\\src\\views\\digerIslemler",
-    "\\reactapp\\src\\views\\pages\\authentication",
     "\\webapi",
+    "\\webapi\\Controllers",
+    "\\webapi\\Data",
+    "\\webapi\\Data\\Interface",
+    "\\webapi\\Entity",
     "\\webapi\\ViewModel",
     "\\webapi\\ViewModel\\Product"
   ],
-  "SelectedNode": "\\reactapp\\public",
+  "SelectedNode": "\\ReactCore.sln",
   "PreviewInSolutionExplorer": false
 }

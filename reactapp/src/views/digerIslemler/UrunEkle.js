@@ -64,14 +64,14 @@ function UrunEkle() {
         if (typeof id !== 'undefined') {
             toast.promise(UrunEklePromise, {
                 pending: 'ürün güncelleniyor',
-                success: productName +' başarıyla güncellendi 👌',
+                success: productName + ' başarıyla güncellendi 👌',
                 error: productName + ' güncellenirken hata oluştu 🤯'
             });
         } else {
             toast.promise(musteriEklePromise, {
                 pending: 'Ürün kaydı yapılıyor',
                 success: productName + ' başarıyla eklendi 👌',
-                error: productName +  ' eklenirken hata oluştu 🤯'
+                error: productName + ' eklenirken hata oluştu 🤯'
             });
         }
     };
@@ -210,8 +210,8 @@ function UrunEkle() {
                                     onChange={(e) => setProductSize(e.target.value)}
                                 />
                                 <TextField
-                                   // error={emailError || !!validationErrors.Email}
-                                   // helperText={emailError ? 'Email adresini kontrol edin' : validationErrors.Email} // emailError true ise kendi mesajını göster, aksi halde validationErrors'tan gelen mesajı göster
+                                    // error={emailError || !!validationErrors.Email}
+                                    // helperText={emailError ? 'Email adresini kontrol edin' : validationErrors.Email} // emailError true ise kendi mesajını göster, aksi halde validationErrors'tan gelen mesajı göster
                                     type="number"
                                     margin="normal"
                                     id="price"
