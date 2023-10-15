@@ -57,10 +57,10 @@ namespace webapi.Controllers
         public ApiResult Delete(int id)
         {
             var data = _unitOfWork.Repository<Musteri>().GetById(id);
-            //if (_unitOfWork.Repository<Kullanici>().Any(i => i.RolId == id))
-            //{
-            //    return new ApiResult { Result = false, Message = "Rol kullanıcı tarafından kullanılmaktadır." };
-            //}
+            if (_unitOfWork.Repository<Kullanici>().Any(i => i.RolId == id))
+            {
+                return new ApiResult { Result = false, Message = "Rol kullanıcı tarafından kullanılmaktadır." };
+            }
             
             if (data == null)
             {

@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\reactapp",
-    "\\reactapp\\src",
-    "\\reactapp\\src\\views",
-    "\\reactapp\\src\\views\\digerIslemler",
     "\\webapi",
+    "\\webapi\\Base",
+    "\\webapi\\Base\\Base",
     "\\webapi\\Controllers",
     "\\webapi\\Data",
     "\\webapi\\Data\\Interface",
@@ -13,6 +11,5 @@
     "\\webapi\\ViewModel",
     "\\webapi\\ViewModel\\Product"
   ],
-  "SelectedNode": "\\ReactCore.sln",
   "PreviewInSolutionExplorer": false
 }

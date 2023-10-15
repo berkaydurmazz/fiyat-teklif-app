@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using webapi.Base.Base;
 using webapi.Base.Base.Grid;
@@ -42,13 +42,31 @@ namespace webapi.Controllers
 
             return a;
         }
+        [HttpGet("Delete")]
+        public ApiResult Delete(int id)
+        {
+            var data = _unitOfWork.Repository<Product>().GetById(id);
+            if (_unitOfWork.Repository<Product>().Any(i => i.RolId == id))
+            {
+                return new ApiResult { Result = false, Message = "Rol kullanıcı tarafından kullanılmaktadır." };
+            }
+
+            if (data == null)
+            {
+                return new ApiResult { Result = false, Message = "Belirtilen müşteri bulunamadı." };
+            }
+
+            _unitOfWork.Repository<Product>().SoftDelete(data.Id);
+            _unitOfWork.SaveChanges();
+            return new ApiResult { Result = true };
+        }
 
         [HttpPost("CreateOrUpdateProduct")]
         [AllowAnonymous]
         public ApiResult CreateOrUpdateProduct([FromBody] ProductCreateVM dataVM)
         {
             if (!ModelState.IsValid)
-                return new ApiResult { Result = false, Message = "Form'da doldurulmayan alanlar mevcut,l�tfen doldurun." };
+                return new ApiResult { Result = false, Message = "Form'da doldurulmayan alanlar mevcut,lütfen doldurun." };
             Product data = null;
             if (dataVM.Id > 0)
                 data = _unitOfWork.Repository<Product>().GetById(dataVM.Id);
