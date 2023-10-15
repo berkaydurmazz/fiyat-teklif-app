@@ -8,6 +8,6 @@ namespace webapi.Entity
         public double price { get; set}
         public string suppliers { get; set; }
         public double kdvRate { get; set; }
-        public string category { get; set; }
+        public Category category { get; set; }
     }
 }

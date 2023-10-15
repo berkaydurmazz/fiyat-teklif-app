@@ -52,6 +52,27 @@ const digerIslemler = {
                     url: '/digerIslemler/urun-ekle'
                 }
             ]
+        },
+        {
+            id: 'categories',
+            title: 'Kategoriler',
+            type: 'collapse',
+            icon: icons.IconUsers,
+
+            children: [
+                {
+                    id: 'categories',
+                    title: 'Kategoriler',
+                    type: 'item',
+                    url: '/digerIslemler/kategoriler'
+                },
+                {
+                    id: 'kategori-ekle',
+                    title: 'Kategori Ekle',
+                    type: 'item',
+                    url: '/digerIslemler/kategori-ekle'
+                }
+            ]
         }
     ]
 };

@@ -83,6 +83,24 @@ namespace webapi.Controllers
 
             return new ApiResult<GridResultModel<CustomerGridVM>> { Data = rest, Result = true };
         }
+        [HttpGet("Delete")]
+        public ApiResult Delete(int id)
+        {
+            var data = _unitOfWork.Repository<Customer>().GetById(id);
+            if (_unitOfWork.Repository<Customer>().Any(i => i.RolId == id))
+            {
+                return new ApiResult { Result = false, Message = "Rol kullanıcı tarafından kullanılmaktadır." };
+            }
+
+            if (data == null)
+            {
+                return new ApiResult { Result = false, Message = "Belirtilen müşteri bulunamadı." };
+            }
+
+            _unitOfWork.Repository<Customer>().SoftDelete(data.Id);
+            _unitOfWork.SaveChanges();
+            return new ApiResult { Result = true };
+        }
 
     }
 }
