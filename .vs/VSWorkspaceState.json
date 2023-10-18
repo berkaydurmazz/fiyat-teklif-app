@@ -1,15 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\reactapp",
+    "\\reactapp\\src",
+    "\\reactapp\\src\\menu-items",
+    "\\reactapp\\src\\views",
+    "\\reactapp\\src\\views\\digerIslemler",
     "\\webapi",
-    "\\webapi\\Base",
-    "\\webapi\\Base\\Base",
-    "\\webapi\\Controllers",
-    "\\webapi\\Data",
-    "\\webapi\\Data\\Interface",
-    "\\webapi\\Entity",
     "\\webapi\\ViewModel",
-    "\\webapi\\ViewModel\\Product"
+    "\\webapi\\ViewModel\\Musteri",
+    "\\webapi\\ViewModel\\PriceOffer"
   ],
   "PreviewInSolutionExplorer": false
 }

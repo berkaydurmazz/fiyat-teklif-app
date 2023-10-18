@@ -10,6 +10,11 @@
       "taskLabel": "task-MusteriController",
       "appliesTo": "webapi/Controllers/MusteriController.cs",
       "type": "launch"
+    },
+    {
+      "taskLabel": "task-CategoryCreateVM",
+      "appliesTo": "webapi/ViewModel/Category/CategoryCreateVM.cs",
+      "type": "launch"
     }
   ]
 }
