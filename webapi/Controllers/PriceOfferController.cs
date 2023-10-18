@@ -46,7 +46,7 @@ namespace webapi.Controllers
                 return new ApiResult { Result = false, Message = "Form'da doldurulmayan alanlar mevcut,lütfen doldurun." };
             Product data = null;
             if (dataVM.OfferId > 0)
-                data = _unitOfWork.Repository<Product>().GetById(dataVM.OfferId;
+                data = _unitOfWork.Repository<Product>().GetById(dataVM.OfferId);
             else
                 data = new Product()
                 {

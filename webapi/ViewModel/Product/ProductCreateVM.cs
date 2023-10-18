@@ -12,7 +12,7 @@ namespace webapi.ViewModel.Product
         [Required]
         public string productSize { get; set; }
         [Required]
-        public double price { get; set}
+        public double price { get; set; }
         [Required]
         public string suppliers { get; set; }
         [Required]

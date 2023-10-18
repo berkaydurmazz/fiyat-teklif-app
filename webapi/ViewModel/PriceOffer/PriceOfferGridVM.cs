@@ -5,8 +5,6 @@ using webapi.Entity;
 using webapi.Helper.Base;
 using webapi.ViewModel.General.Grid;
 using webapi.ViewModel;
-using webapi.ViewModel.Customer;
-using webapi.ViewModel.Product;
 
 namespace webapi.ViewModel.PriceOffer
 {

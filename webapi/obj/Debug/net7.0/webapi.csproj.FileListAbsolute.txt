@@ -5,3 +5,5 @@ C:\Users\Berkay\Source\Repos\berkaydurmazz\fiyat-teklif-app\webapi\obj\Debug\net
 C:\Users\Berkay\Source\Repos\berkaydurmazz\fiyat-teklif-app\webapi\obj\Debug\net7.0\webapi.csproj.CoreCompileInputs.cache
 C:\Users\Berkay\Source\Repos\berkaydurmazz\fiyat-teklif-app\webapi\obj\Debug\net7.0\webapi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Berkay\Source\Repos\berkaydurmazz\fiyat-teklif-app\webapi\obj\Debug\net7.0\webapi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Berkay\Source\Repos\berkaydurmazz\fiyat-teklif-app\webapi\obj\Debug\net7.0\webapi.dll
+C:\Users\Berkay\Source\Repos\berkaydurmazz\fiyat-teklif-app\webapi\obj\Debug\net7.0\webapi.pdb
