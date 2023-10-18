@@ -5,7 +5,7 @@ namespace webapi.ViewModel.Category
     public class CategoryCreateVM
     {
         public int Id { get; set; }
-        [Required]
+        [Required]]
         public string catName { get; set; }
     }
 }
