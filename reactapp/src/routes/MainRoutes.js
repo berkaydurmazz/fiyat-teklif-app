@@ -10,9 +10,10 @@ const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')))
 // digerIslemler routing
 const Musteriler = Loadable(lazy(() => import('views/digerIslemler/MusteriListesi')));
 const MusteriEkle = Loadable(lazy(() => import('views/digerIslemler/MusteriEkle')));
-//const Urunler = Loadable(lazy(() => import('views/digerIslemler/UrunListesi')));
-//const UrunEkle = Loadable(lazy(() => import('views/digerIslemler/UrunEkle')));
-
+const Urunler = Loadable(lazy(() => import('views/digerIslemler/UrunListesi')));
+const UrunEkle = Loadable(lazy(() => import('views/digerIslemler/UrunEkle')));
+const KategoriEkle = Loadable(lazy(() => import('views/digerIslemler/KategoriEkle')));
+const Kategoriler = Loadable(lazy(() => import('views/digerIslemler/KategoriListesi')));
 // utilities routing
 const UtilsTypography = Loadable(lazy(() => import('views/utilities/Typography')));
 const UtilsColor = Loadable(lazy(() => import('views/utilities/Color')));
@@ -110,20 +111,31 @@ const MainRoutes = {
                 {
                     path: 'musteri-duzenle/:id',
                     element: <MusteriEkle />
+                },
+                {
+                    path: 'urunler',
+                    element: <Urunler />
+                },
+                {
+                    path: 'urun-ekle',
+                    element: <UrunEkle />
+                },
+                {
+                    path: 'urun-duzenle/:id',
+                    element: <UrunEkle />
+                },
+                {
+                    path: 'kategoriler',
+                    element: <Kategoriler />
+                },
+                {
+                    path: 'kategori-ekle',
+                    element: <KategoriEkle />
+                },
+                {
+                    path: 'kategori-duzenle/:id',
+                    element: <KategoriEkle />
                 }
-                //,
-                //{
-                //    path: 'urunler',
-                //    element: <Urunler />
-                //},
-                //{
-                //    path: 'urun-ekle',
-                //    element: <UrunEkle />
-                //},
-                //{
-                //    path: 'urun-duzenle/:id',
-                //    element: <UrunEkle />
-                //}
             ]
         }
     ]

@@ -31,13 +31,15 @@ function UrunEkle() {
         if (typeof id !== 'undefined') {
             setIsUpdate(id);
             setIsFetching(true);
-            musteriGetirPromise();
+            UrunGetirPromise();
         } else {
-            setEmail('');
-            setPhone('');
-            setMusteriAdi('');
-            setMusteriSoyadi('');
-            setFirmaAdi('');
+            setproductName('');
+            setproductDescp('');
+            setproductSize('');
+            setPrice('');
+            setSuppliers('');
+            setKdvRate('');
+            setCategory('');
             setIsFetching(false);
         }
     }, [id]);
